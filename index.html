@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <title>AprendiAventuras</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles"></div>
+    <main class="scroll-smooth">
+        <!-- NAVBAR LATERAL GAMER -->
+        <nav class="fixed top-0 left-0 min-h-screen w-17 bg-transparent z-50 flex flex-col items-center justify-center gap-6">
+            <!-- Inicio -->
+            <a href="#inicio" class="nav-icon">
+                <img src="images/nav/inicio-del-proyecto.gif" alt="Inicio" class="rounded-full">
+            </a>
+            <!-- Conoce -->
+            <a href="#conoce" class="nav-icon">
+                <img src="images/nav/idea-de-bombilla.gif" alt="Conoce" class="rounded-full">
+            </a>
+            <!-- Jugabilidad -->
+            <a href="#jugabilidad" class="nav-icon">
+                <img src="images/nav/consola-de-juegos.gif" alt="Jugabilidad" class="rounded-full">
+            </a>
+            <!-- Descarga -->
+            <a href="#descarga" class="nav-icon">
+                <img src="images/nav/descargar.gif" alt="Descarga" class="rounded-full">
+            </a>
+
+        </nav>
+
+        <section id="inicio" class="bg-[url('/images/hero.png')] bg-cover bg-center relative bg-animate bg-fixed">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-blue-950/70 z-0"></div>
+            <!-- Contenido -->
+            <div class="container min-h-screen mx-auto px-10 lg:px-30 py-20 relative z-20 text-white flex flex-col gap-5 items-center justify-center">
+                <img src="images/logo-web.png" class="h-60" loading="lazy">
+                <h1 class="title-main text-[50px] font-bold text-center">
+                    ¡VOCALES, NÚMEROS,<br class="hidden lg:block"> FORMAS Y COLORES!
+                </h1>
+                <p class="text-[30px] font-semibold text-center p">
+                    Aprender nunca fue tan divertido
+                </p> 
+                <!-- Botón 1 --> 
+                <button class="button abrirModal">ABRIR EN EL NAVEGADOR</button>
+                <!-- Modal -->
+                <div class="flex justify-center px-5">
+                    <div id="miModal" class="modal">
+                        <div class="modal-content">
+                            <div class="flex justify-end">
+                                <img src="images/close.png" class="close cursor-pointer h-15 w-15">
+                            </div>
+                            <h2>PROXIMAMENTE</h2>
+                            <p>Esta función aún no está disponible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="conoce" class="bg-[url('/images/hero.png')] bg-cover bg-center relative bg-animate bg-fixed">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-orange-500/30 z-0"></div>
+            <!-- Contenido -->
+            <div class="container min-h-screen mx-auto px-10 lg:px-30 py-20 relative z-10 text-white flex flex-col gap-5 items-center justify-center">
+                <div class="flex flex-col gap-5 items-center">
+                    <h1 class="text-[50px] font-bold text-center title-sub">
+                        ¡CONOCE MÁS!
+                    </h1>
+                    <p class="text-[20px] font-bold text-center max-w-2xl p">
+                        En esta sección podrás conocer las principales características y beneficios de la aplicación.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 pt-5">
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">APRENDIZAJE BASADO EN EL JUEGO</p>
+                        <img src="images/cards/imagen-1.webp" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            El videojuego convierte el proceso de aprendizaje en una experiencia divertida e interactiva, aumentando la motivación y el interés del niño.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">DESARROLLO COGNITIVO TEMPRANO</p>
+                        <img src="images/cards/imagen-2.webp" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Estimula habilidades fundamentales como la memoria, la atención y el razonamiento lógico en edades de 3 a 6 años.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">RECONOCIMIENTO DE VOCALES</p>
+                        <img src="images/cards/imagen-3.png" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Favorece la identificación y pronunciación de las vocales mediante imágenes y sonidos.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">PENSAMIENTO LÓGICO-MATEMÁTICO</p>
+                        <img src="images/cards/imagen-4.jpg" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Refuerza el aprendizaje de los números a través del conteo y la asociación número-cantidad.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">IDENTIFICACIÓN DE FORMAS</p>
+                        <img src="images/cards/imagen-5.jpg" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Permite reconocer formas geométricas básicas y relacionarlas con objetos del entorno cotidiano del niño.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">RECONOCIMIENTO DE COLORES</p>
+                        <img src="images/cards/imagen-6.jpg" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Desarrolla la percepción visual mediante actividades que ayudan a identificar y diferenciar colores de forma natural.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">APRENDIZAJE ADAPTATIVO</p>
+                        <img src="images/cards/imagen-7.jpg" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            El sistema ajusta automáticamente la dificultad de los juegos según el desempeño del niño, respetando su ritmo de aprendizaje.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">ESTIMULACIÓN VISUAL Y AUDITIVA</p>
+                        <img src="images/cards/imagen-8.jpg" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Utiliza colores llamativos, animaciones suaves y sonidos amigables para mantener la atención y facilitar la comprensión.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">REFORZAMIENTO POSITIVO</p>
+                        <img src="images/cards/imagen-9.png" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Motiva al niño mediante recompensas visuales y mensajes alentadores, promoviendo la confianza y el aprendizaje sin frustración.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">ALMACENAMIENTO DE DATOS EN LA NUBE</p>
+                        <img src="images/cards/imagen-10.jpg" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Guarda el progreso del niño de forma segura, permitiendo el seguimiento del aprendizaje por parte de padres y docentes.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">APOYO A PADRES Y DOCENTES</p>
+                        <img src="images/cards/imagen-11.webp" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Facilita la visualización del avance del niño, ayudando a identificar fortalezas y áreas que requieren refuerzo.
+                        </p>
+                    </div>
+
+                    <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
+                        <p class="title-cartoon text-[25px] lg:text-[30px] text-center">ACCESIBILIDAD E INCLUSIÓN</p>
+                        <img src="images/cards/imagen-12.jpg" loading="lazy" class="object-center object-cover h-50 w-full rounded-3xl">
+                        <p class="text-[15px] lg:text-[20px] text-center p">
+                            Diseño simple, intuitivo y adaptable para que todos los niños puedan interactuar fácilmente con el videojuego.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-gamer"></div>
+
+        <section id="jugabilidad" class="bg-[url('/images/hero.png')] bg-cover bg-center relative bg-animate bg-fixed">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-orange-500/30 z-0"></div>
+            <!-- Contenido -->
+            <div class="container min-h-screen mx-auto px-10 lg:px-50 py-20 relative z-10 text-white flex flex-col gap-10 items-center justify-center">
+                
+                <div class="flex flex-col gap-5 items-center">
+                    <h1 class="text-[50px] font-bold text-center title-sub">
+                        ¡JUGABILIDAD!
+                    </h1>
+                    <p class="text-[20px] font-bold text-center max-w-2xl p">
+                        Cada actividad de AprendiAventuras está pensada para fortalecer habilidades clave del desarrollo infantil de una manera entretenida y significativa.
+                    </p>
+                </div>
+
+                <!-- Carrusel Vocales -->
+                <div class="w-full">
+                    <h2 class="subtitle-game text-[40px] font-bold text-center">VOCALES</h2>
+                    <!-- <p class="text-[20px] text-center font-semibold p max-w-5xl mx-auto mb-5">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam repellendus ipsa, harum sit odit quas illum doloremque, consequuntur nulla, voluptates sed nihil quia sapiente eos quo qui. Dolore, tempora repellat!
+                    </p> -->
+                    <div class="relative">
+                        <button onclick="scrollCarousel('carousel-vocales', -1)" class="btn-cartoon absolute -left-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
+                            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+                        </button>
+                        <button onclick="scrollCarousel('carousel-vocales', 1)" class="btn-cartoon absolute -right-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
+                            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                        </button>
+                        <div id="carousel-vocales" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide">
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-left p">
+                                            NIVEL 1<br><br>
+                                            El estudiante debe seleccionar la o las imágenes cuyo nombre comience con la vocal que aparece en pantalla. Cada acierto suma 5 puntos.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-1.png" alt="nivel-1-vocales" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-left p">
+                                            NIVEL 2<br><br>
+                                            Completa la palabra que se muestra en pantalla usando la imagen de referencia a un lado. A medida que caen las vocales, atrapa las correctas para ganar puntos. Cada acierto suma 1 punto, ¡pero cuidado con las bombas explosivas!
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-2.png" alt="nivel-2-vocales" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-left p">
+                                            NIVEL 3<br><br>
+                                            Salta de un lado a otro para atrapar la vocal correcta, que corresponde al objeto mostrado en pantalla. Cada acierto suma 3 puntos, ¡y evita a los traviesos patos parlantes!
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-3.png" alt="nivel-3-vocales" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots-container flex justify-center gap-2 mt-4" id="dots-carousel-vocales"></div>
+                    </div>
+                </div>
+
+                <!-- Carrusel Números -->
+                <div class="w-full">
+                    <h2 class="subtitle-game text-[40px] font-bold mb-1 text-center">NÚMEROS</h2>
+                    <!-- <p class="text-[20px] text-center font-semibold p max-w-5xl mx-auto mb-5">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam repellendus ipsa, harum sit odit quas illum doloremque, consequuntur nulla, voluptates sed nihil quia sapiente eos quo qui. Dolore, tempora repellat!
+                    </p> -->
+                    <div class="relative">
+                        <button onclick="scrollCarousel('carousel-numeros', -1)" class="btn-cartoon absolute -left-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
+                            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+                        </button>
+                        <button onclick="scrollCarousel('carousel-numeros', 1)" class="btn-cartoon absolute -right-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
+                            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                        </button>
+                        <div id="carousel-numeros" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-4.png" alt="nivel-1-numeros" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-left p">
+                                            NIVEL 1<br><br>
+                                            Identifica el número que aparece en pantalla y selecciona las tarjetas que contengan la cantidad correcta de objetos. Cada acierto suma 5 puntos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-5.png" alt="nivel-2-numeros" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-left p">
+                                            NIVEL 2<br><br>
+                                            Observa el objeto (bola de nieve o bola de fuego) y la cantidad mostrada. Corre y salta para atrapar la cantidad correcta.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-6.png" alt="nivel-3-numeros" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-left p">
+                                            NIVEL 3<br><br>
+                                            Sube por los eslabones y mueve al personaje a la derecha o izquierda según la cantidad de fresas indicada en cada reto. Cada acierto suma puntos y ayuda a avanzar al siguiente desafío.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots-container flex justify-center gap-2 mt-4" id="dots-carousel-numeros"></div>
+                    </div>
+                </div>
+
+                <!-- Carrusel Formas y Colores -->
+                <div class="w-full">
+                    <h2 class="subtitle-game text-[40px] font-bold mb-1 text-center">FORMAS Y COLORES</h2>
+                    <!-- <p class="text-[20px] text-center font-semibold p max-w-5xl mx-auto mb-5">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam repellendus ipsa, harum sit odit quas illum doloremque, consequuntur nulla, voluptates sed nihil quia sapiente eos quo qui. Dolore, tempora repellat!
+                    </p> -->
+                    <div class="relative">
+                        <button onclick="scrollCarousel('carousel-fyc', -1)" class="btn-cartoon absolute -left-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
+                            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+                        </button>
+                        <button onclick="scrollCarousel('carousel-fyc', 1)" class="btn-cartoon absolute -right-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
+                            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                        </button>
+                        <div id="carousel-fyc" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-[20px] text-left font-semibold p">
+                                            NIVEL 1<br><br>
+                                            Atrapa la figura que tenga el color indicado en pantalla.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-7.png" alt="nivel-1-fyc" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-[20px] text-left font-semibold p">
+                                            NIVEL 2<br><br>
+                                            Corre y salta por todo el escenario para encontrar la figura con el color correcto. Cada acierto suma puntos y desbloquea la siguiente prueba.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-8.png" alt="nivel-2-fyc" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                                <div class="grid grid-cols-1 lg:grid-cols-2">
+                                    <div class="flex flex-col p-5">
+                                        <p class="text-[20px] text-left font-semibold p">
+                                            NIVEL 3<br><br>
+                                            Abre todas las puertas superando los retos de cada una. Responde correctamente para avanzar y completar el desafío final.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col p-5">
+                                        <img src="images/juego/p-9.png" alt="nivel-3-fyc" class="object-cover h-full w-full rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots-container flex justify-center gap-2 mt-4" id="dots-carousel-fyc"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="divider-gamer"></div>
+
+        <section id="descarga" class="bg-[url('/images/hero.png')] bg-cover bg-center relative bg-animate bg-fixed">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-orange-500/30 z-0"></div>
+            <!-- Contenido -->
+            <div class="container min-h-screen mx-auto px-10 lg:px-30 py-20 relative z-10 text-white flex flex-col gap-5 items-center justify-center">
+                <div class="flex flex-col gap-5 items-center">
+                    <h1 class="text-[50px] font-bold text-center title-sub">
+                        ¡DESCARGA AQUÍ!
+                    </h1>
+                    <p class="text-[20px] font-bold text-center max-w-2xl p">
+                        Una aplicación segura, intuitiva y diseñada para que los niños aprendan jugando. Descárgala y convierte el aprendizaje en una aventura divertida.
+                    </p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-10 justify-center card-cartoon-des p-10 rounded-2xl">
+                    <div class="flex flex-col w-full lg:w-3/5">
+                        <img src="images/banner.png" alt="pantalla-principal-juego" class="object-cover h-full w-full rounded-2xl img-shake">
+                    </div>
+                    <div class="flex flex-col w-full lg:w-2/5 items-center justify-center">
+                        <!-- Botón 2 --> 
+                        <button class="button">DESCARGAR PARA WINDOWS</button>
+                        <!-- Botón 3 --> 
+                        <button class="button abrirModal">DESCARGAR PARA ANDROID</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-blue-900">
+            <div class="container mx-auto px-10 lg:px-30 py-5 relative z-10 text-white flex flex-col gap-2 items-center justify-center">
+                <p class="text-[12px] p text-center">
+                    © 2026 Aprendiaventuras | Educación infantil
+                </p>
+            </div>
+        </footer>
+
+    </main>
+    <script src="particles.js"></script>
+    <script src="carrusel.js"></script>
+    <script src="card.js"></script>
+    <script src="dots.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
