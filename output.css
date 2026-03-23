@@ -380,8 +380,11 @@
   .bg-transparent {
     background-color: transparent;
   }
-  .bg-\[url\(\'\/images\/hero\.png\'\)\] {
-    background-image: url('/images/hero.png');
+  .bg-\[url\(\'hero\.png\'\)\] {
+    background-image: url('hero.png');
+  }
+  .bg-\[url\(\'images\/hero\.png\'\)\] {
+    background-image: url('images/hero.png');
   }
   .bg-cover {
     background-size: cover;
