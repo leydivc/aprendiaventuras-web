@@ -16,7 +16,7 @@
     <div id="particles"></div>
     <main class="scroll-smooth">
         <!-- NAVBAR LATERAL GAMER -->
-        <nav class="fixed top-0 left-0 min-h-screen w-17 bg-transparent z-50 flex flex-col items-center justify-center gap-6">
+        <nav class="fixed top-10 lg:top-0 left-0 lg:left-10 min-w-screen lg:min-h-screen lg:min-w-17 bg-transparent z-50 flex flex-row lg:flex-col justify-center items-center lg:items-start gap-6">
             <!-- Inicio -->
             <a href="#inicio" class="nav-icon">
                 <img src="images/nav/inicio-del-proyecto.gif" alt="Inicio" class="rounded-full">
@@ -78,7 +78,7 @@
                         En esta sección podrás conocer las principales características y beneficios de la aplicación.
                     </p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 pt-5">
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-5 pt-5">
 
                     <div class="card-cartoon p-5 flex flex-col gap-3 card-animate">
                         <p class="title-cartoon text-[25px] lg:text-[30px] text-center">APRENDIZAJE BASADO EN EL JUEGO</p>
@@ -209,8 +209,8 @@
                         <button onclick="scrollCarousel('carousel-vocales', 1)" class="btn-cartoon absolute -right-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
                             <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
                         </button>
-                        <div id="carousel-vocales" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide">
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                        <div id="carousel-vocales" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide items-stretch">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
                                     <div class="flex flex-col p-5">
                                         <p class="text-left p">
@@ -218,12 +218,16 @@
                                             El estudiante debe seleccionar la o las imágenes cuyo nombre comience con la vocal que aparece en pantalla. Cada acierto suma 5 puntos.
                                         </p>
                                     </div>
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-1.png" alt="nivel-1-vocales" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl">
+                                        <img 
+                                            src="images/juego/p-1.png" 
+                                            alt="nivel-1-vocales" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
                                     <div class="flex flex-col p-5">
                                         <p class="text-left p">
@@ -231,12 +235,16 @@
                                             Completa la palabra que se muestra en pantalla usando la imagen de referencia a un lado. A medida que caen las vocales, atrapa las correctas para ganar puntos. Cada acierto suma 1 punto, ¡pero cuidado con las bombas explosivas!
                                         </p>
                                     </div>
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-2.png" alt="nivel-2-vocales" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl">
+                                        <img 
+                                            src="images/juego/p-2.png" 
+                                            alt="nivel-2-vocales" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
                                     <div class="flex flex-col p-5">
                                         <p class="text-left p">
@@ -244,8 +252,12 @@
                                             Salta de un lado a otro para atrapar la vocal correcta, que corresponde al objeto mostrado en pantalla. Cada acierto suma 3 puntos, ¡y evita a los traviesos patos parlantes!
                                         </p>
                                     </div>
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-3.png" alt="nivel-3-vocales" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl">
+                                        <img 
+                                            src="images/juego/p-3.png" 
+                                            alt="nivel-3-vocales" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -267,13 +279,17 @@
                         <button onclick="scrollCarousel('carousel-numeros', 1)" class="btn-cartoon absolute -right-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
                             <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
                         </button>
-                        <div id="carousel-numeros" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                        <div id="carousel-numeros" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide items-stretch">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-4.png" alt="nivel-1-numeros" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl order-2 lg:order-1">
+                                        <img 
+                                            src="images/juego/p-4.png" 
+                                            alt="nivel-1-numeros" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
-                                    <div class="flex flex-col p-5">
+                                    <div class="flex flex-col p-5 order-1 lg:order-2">
                                         <p class="text-left p">
                                             NIVEL 1<br><br>
                                             Identifica el número que aparece en pantalla y selecciona las tarjetas que contengan la cantidad correcta de objetos. Cada acierto suma 5 puntos.
@@ -281,12 +297,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-5.png" alt="nivel-2-numeros" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl order-2 lg:order-1">
+                                        <img 
+                                            src="images/juego/p-5.png" 
+                                            alt="nivel-2-numeros" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
-                                    <div class="flex flex-col p-5">
+                                    <div class="flex flex-col p-5 order-1 lg:order-2">
                                         <p class="text-left p">
                                             NIVEL 2<br><br>
                                             Observa el objeto (bola de nieve o bola de fuego) y la cantidad mostrada. Corre y salta para atrapar la cantidad correcta.
@@ -294,12 +314,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-6.png" alt="nivel-3-numeros" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl order-2 lg:order-1">
+                                        <img 
+                                            src="images/juego/p-6.png" 
+                                            alt="nivel-3-numeros" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
-                                    <div class="flex flex-col p-5">
+                                    <div class="flex flex-col p-5 order-1 lg:order-2">
                                         <p class="text-left p">
                                             NIVEL 3<br><br>
                                             Sube por los eslabones y mueve al personaje a la derecha o izquierda según la cantidad de fresas indicada en cada reto. Cada acierto suma puntos y ayuda a avanzar al siguiente desafío.
@@ -325,8 +349,8 @@
                         <button onclick="scrollCarousel('carousel-fyc', 1)" class="btn-cartoon absolute -right-20 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
                             <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
                         </button>
-                        <div id="carousel-fyc" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                        <div id="carousel-fyc" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide items-stretch">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
                                     <div class="flex flex-col p-5">
                                         <p class="text-[20px] text-left font-semibold p">
@@ -334,12 +358,16 @@
                                             Atrapa la figura que tenga el color indicado en pantalla.
                                         </p>
                                     </div>
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-7.png" alt="nivel-1-fyc" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl">
+                                        <img 
+                                            src="images/juego/p-7.png" 
+                                            alt="nivel-1-fyc" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
                                     <div class="flex flex-col p-5">
                                         <p class="text-[20px] text-left font-semibold p">
@@ -347,12 +375,16 @@
                                             Corre y salta por todo el escenario para encontrar la figura con el color correcto. Cada acierto suma puntos y desbloquea la siguiente prueba.
                                         </p>
                                     </div>
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-8.png" alt="nivel-2-fyc" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl">
+                                        <img 
+                                            src="images/juego/p-8.png" 
+                                            alt="nivel-2-fyc" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item min-w-full h-full lg:h-100 flex items-center justify-center">
+                            <div class="carousel-item min-w-full lg:h-100 flex items-start lg:items-center justify-center">
                                 <div class="grid grid-cols-1 lg:grid-cols-2">
                                     <div class="flex flex-col p-5">
                                         <p class="text-[20px] text-left font-semibold p">
@@ -360,8 +392,12 @@
                                             Abre todas las puertas superando los retos de cada una. Responde correctamente para avanzar y completar el desafío final.
                                         </p>
                                     </div>
-                                    <div class="flex flex-col p-5">
-                                        <img src="images/juego/p-9.png" alt="nivel-3-fyc" class="object-cover h-full w-full rounded-xl">
+                                    <div class="flex flex-col p-5 overflow-hidden rounded-xl">
+                                        <img 
+                                            src="images/juego/p-9.png" 
+                                            alt="nivel-3-fyc" 
+                                            class="zoom-img object-cover h-full w-full rounded-xl cursor-pointer transition-all duration-300"
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -414,10 +450,12 @@
         </footer>
 
     </main>
+    <div id="zoomOverlay" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50"></div>
     <script src="particles.js"></script>
     <script src="carrusel.js"></script>
     <script src="card.js"></script>
     <script src="dots.js"></script>
     <script src="modal.js"></script>
+    <script src="zoom.js"></script>
 </body>
 </html>
